@@ -1,39 +1,4 @@
-<!doctype html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Nexgeno Partner Hero</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <link href="styles.css" rel="stylesheet">
-</head>
-<body class="hero-page">
-  <div class="hero-wrap">
-    <nav class="navbar navbar-expand-lg navbar-dark hero-navbar">
-      <div class="container">
-        <a class="navbar-brand d-flex align-items-center gap-2" href="index.html">
-          <span class="logo-box">N</span>
-          <span class="fw-semibold">Nexgeno</span>
-        </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="mainNav">
-          <ul class="navbar-nav mx-auto gap-lg-2">
-            <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
-            <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
-            <li class="nav-item"><a class="nav-link" href="commission.html">Commission</a></li>
-            <li class="nav-item"><a class="nav-link" href="partner-types.html">Partner Types</a></li>
-            <li class="nav-item"><a class="nav-link" href="onboarding.html">Onboarding</a></li>
-            <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
-            <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
-          </ul>
-          <a class="btn btn-sm hero-top-btn" href="apply.html">Become a Partner</a>
-        </div>
-      </div>
-    </nav>
+<?php include 'header.php'; ?>
 
     <header class="hero-main">
       <div class="container text-center">
@@ -538,55 +503,4 @@
     </div>
   </section>
 
-  <footer class="site-footer">
-    <div class="container">
-      <div class="row g-4 g-lg-5">
-        <div class="col-lg-3">
-          <a class="footer-brand d-inline-flex align-items-center gap-2 text-decoration-none" href="index.html">
-            <span class="logo-box">N</span>
-            <span>Nexgeno</span>
-          </a>
-          <p class="footer-about mt-3 mb-0">
-            Nexgeno Technology Pvt. Ltd. is a full-service IT, Web &amp; Digital Marketing company helping businesses grow online.
-          </p>
-        </div>
-
-        <div class="col-sm-6 col-lg-3">
-          <h6 class="footer-title">Partner Program</h6>
-          <ul class="footer-links">
-            <li><a href="services.html">Services</a></li>
-            <li><a href="commission.html">Commission</a></li>
-            <li><a href="partner-types.html">Partner Types</a></li>
-            <li><a href="onboarding.html">Onboarding</a></li>
-            <li><a href="apply.html">Apply Now</a></li>
-          </ul>
-        </div>
-
-        <div class="col-sm-6 col-lg-3">
-          <h6 class="footer-title">Company</h6>
-          <ul class="footer-links">
-            <li><a href="about.html">About Us</a></li>
-            <li><a href="contact.html">Contact</a></li>
-            <li><a href="terms.html">Terms &amp; Conditions</a></li>
-            <li><a href="privacy.html">Privacy Policy</a></li>
-          </ul>
-        </div>
-
-        <div class="col-lg-3">
-          <h6 class="footer-title">Contact</h6>
-          <ul class="footer-contact">
-            <li><i class="bi bi-envelope"></i> info@nexgeno.in</li>
-            <li><i class="bi bi-telephone"></i> Contact via WhatsApp</li>
-            <li><i class="bi bi-geo-alt"></i> Mumbai, India<br>Serving Partners Worldwide</li>
-          </ul>
-        </div>
-      </div>
-
-      <hr class="footer-divider">
-      <p class="footer-copy mb-0">© 2026 Nexgeno Technology Pvt. Ltd. All rights reserved.</p>
-    </div>
-  </footer>
-
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-</body>
-</html>
+<?php include 'footer.php'; ?>
