@@ -14,15 +14,14 @@ $heroWrapExtraClass = $heroWrapExtraClass ?? '';
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <link href="styles.css?v=1.0" rel="stylesheet">
+  <link href="styles.css?v=1.1" rel="stylesheet">
 </head>
 <body class="hero-page<?php echo $bodyPageClass !== '' ? ' ' . htmlspecialchars($bodyPageClass, ENT_QUOTES, 'UTF-8') : ''; ?>">
   <div class="hero-wrap<?php echo $compactHeroWrap ? ' hero-wrap-compact' : ''; ?><?php echo $heroWrapExtraClass !== '' ? ' ' . htmlspecialchars($heroWrapExtraClass, ENT_QUOTES, 'UTF-8') : ''; ?>">
     <nav class="navbar navbar-expand-lg navbar-dark hero-navbar">
       <div class="container">
-        <a class="navbar-brand d-flex align-items-center gap-2" href="index.php">
-          <span class="logo-box">N</span>
-          <span class="fw-semibold">Nexgeno</span>
+        <a class="navbar-brand d-flex align-items-center py-1" href="index.php">
+          <img src="images/logo.avif" alt="Nexgeno" class="site-logo site-logo--header" width="200" height="48">
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
           <span class="navbar-toggler-icon"></span>

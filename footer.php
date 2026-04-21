@@ -2,9 +2,8 @@
     <div class="container">
       <div class="row g-4 g-lg-5">
         <div class="col-lg-3">
-          <a class="footer-brand d-inline-flex align-items-center gap-2 text-decoration-none" href="index.php">
-            <span class="logo-box">N</span>
-            <span>Nexgeno</span>
+          <a class="footer-brand d-inline-flex align-items-center text-decoration-none py-1" href="index.php">
+            <img src="images/logo.avif" alt="Nexgeno" class="site-logo site-logo--footer" width="180" height="44">
           </a>
           <p class="footer-about mt-3 mb-0">
             Nexgeno Technology Pvt. Ltd. is a full-service IT, Web &amp; Digital Marketing company helping businesses grow online.
