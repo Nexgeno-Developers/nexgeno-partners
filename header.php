@@ -1,17 +1,23 @@
-<?php $activePage = $activePage ?? ''; ?>
+<?php
+$activePage = $activePage ?? '';
+$compactHeroWrap = $compactHeroWrap ?? false;
+$pageTitle = $pageTitle ?? 'Nexgeno Partners';
+$bodyPageClass = $bodyPageClass ?? '';
+$heroWrapExtraClass = $heroWrapExtraClass ?? '';
+?>
 <!doctype html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Nexgeno Partner Hero</title>
+  <title><?php echo htmlspecialchars($pageTitle, ENT_QUOTES, 'UTF-8'); ?></title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <link href="styles.css" rel="stylesheet">
+  <link href="styles.css?v=1.0" rel="stylesheet">
 </head>
-<body class="hero-page">
-  <div class="hero-wrap">
+<body class="hero-page<?php echo $bodyPageClass !== '' ? ' ' . htmlspecialchars($bodyPageClass, ENT_QUOTES, 'UTF-8') : ''; ?>">
+  <div class="hero-wrap<?php echo $compactHeroWrap ? ' hero-wrap-compact' : ''; ?><?php echo $heroWrapExtraClass !== '' ? ' ' . htmlspecialchars($heroWrapExtraClass, ENT_QUOTES, 'UTF-8') : ''; ?>">
     <nav class="navbar navbar-expand-lg navbar-dark hero-navbar">
       <div class="container">
         <a class="navbar-brand d-flex align-items-center gap-2" href="index.php">
@@ -25,7 +31,7 @@
           <ul class="navbar-nav mx-auto gap-lg-2">
             <li class="nav-item"><a class="nav-link <?php echo $activePage === 'home' ? 'active' : ''; ?>" href="index.php">Home</a></li>
             <li class="nav-item"><a class="nav-link <?php echo $activePage === 'services' ? 'active' : ''; ?>" href="services.php">Services</a></li>
-            <li class="nav-item"><a class="nav-link" href="commission.html">Commission</a></li>
+            <li class="nav-item"><a class="nav-link <?php echo $activePage === 'commission' ? 'active' : ''; ?>" href="commission.php">Commission</a></li>
             <li class="nav-item"><a class="nav-link" href="partner-types.html">Partner Types</a></li>
             <li class="nav-item"><a class="nav-link" href="onboarding.html">Onboarding</a></li>
             <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>

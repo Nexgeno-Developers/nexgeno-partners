@@ -15,7 +15,7 @@
           <h6 class="footer-title">Partner Program</h6>
           <ul class="footer-links">
             <li><a href="services.php">Services</a></li>
-            <li><a href="commission.html">Commission</a></li>
+            <li><a href="commission.php">Commission</a></li>
             <li><a href="partner-types.html">Partner Types</a></li>
             <li><a href="onboarding.html">Onboarding</a></li>
             <li><a href="apply.html">Apply Now</a></li>

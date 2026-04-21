@@ -1,5 +1,7 @@
 <?php
+$pageTitle = 'Services | Nexgeno Partners';
 $activePage = 'services';
+$compactHeroWrap = true;
 include 'header.php';
 ?>
 
@@ -146,7 +148,7 @@ include 'header.php';
       <p>Join our partner program today and get access to sales materials, training, and dedicated support.</p>
       <div class="d-flex justify-content-center gap-2 flex-wrap mt-3">
         <a href="apply.html" class="btn service-apply-btn">Apply Now <i class="bi bi-arrow-right-short"></i></a>
-        <a href="commission.html" class="btn service-outline-btn">View Commission Details</a>
+        <a href="commission.php" class="btn service-outline-btn">View Commission Details</a>
       </div>
     </div>
   </section>
