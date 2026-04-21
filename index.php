@@ -1,4 +1,7 @@
-<?php include 'header.php'; ?>
+<?php
+$activePage = 'home';
+include 'header.php';
+?>
 
     <header class="hero-main">
       <div class="container text-center">

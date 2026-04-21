@@ -14,7 +14,7 @@
         <div class="col-sm-6 col-lg-3">
           <h6 class="footer-title">Partner Program</h6>
           <ul class="footer-links">
-            <li><a href="services.html">Services</a></li>
+            <li><a href="services.php">Services</a></li>
             <li><a href="commission.html">Commission</a></li>
             <li><a href="partner-types.html">Partner Types</a></li>
             <li><a href="onboarding.html">Onboarding</a></li>
