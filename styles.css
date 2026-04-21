@@ -1052,28 +1052,38 @@ body {
 }
 
 .site-footer {
-  background: #163a69;
-  color: rgba(255, 255, 255, 0.88);
-  padding: 42px 0 26px;
+  background: #1b3052;
+  color: #d1d5db;
+  padding: 36px 0 22px;
+}
+
+.site-footer .logo-box {
+  width: 22px;
+  height: 22px;
+  border-radius: 6px;
+  font-size: 11px;
 }
 
 .footer-brand {
   color: #fff;
-  font-size: 2rem;
+  font-size: 1.0625rem;
   font-weight: 700;
+  letter-spacing: -0.02em;
 }
 
 .footer-about {
-  color: rgba(255, 255, 255, 0.78);
-  font-size: 1.32rem;
-  line-height: 1.5;
+  color: #d1d5db;
+  font-size: 0.8125rem;
+  line-height: 1.55;
+  max-width: 280px;
 }
 
 .footer-title {
   color: #fff;
-  font-size: 1.62rem;
+  font-size: 0.8125rem;
   font-weight: 700;
-  margin-bottom: 12px;
+  margin-bottom: 10px;
+  letter-spacing: 0.02em;
 }
 
 .footer-links,
@@ -1084,13 +1094,14 @@ body {
 }
 
 .footer-links li {
-  margin-bottom: 10px;
+  margin-bottom: 7px;
 }
 
 .footer-links a {
-  color: rgba(255, 255, 255, 0.8);
+  color: #d1d5db;
   text-decoration: none;
-  font-size: 1.26rem;
+  font-size: 0.8125rem;
+  line-height: 1.45;
 }
 
 .footer-links a:hover {
@@ -1098,44 +1109,43 @@ body {
 }
 
 .footer-contact li {
-  color: rgba(255, 255, 255, 0.84);
-  font-size: 1.2rem;
-  margin-bottom: 10px;
+  color: #d1d5db;
+  font-size: 0.8125rem;
+  margin-bottom: 9px;
   line-height: 1.45;
 }
 
 .footer-contact i {
   margin-right: 8px;
+  color: #d1d5db;
+  font-size: 0.9rem;
+  vertical-align: -0.1em;
 }
 
 .footer-divider {
-  border-color: rgba(255, 255, 255, 0.13);
-  margin: 18px 0 16px;
+  border-color: rgba(255, 255, 255, 0.12);
+  margin: 22px 0 14px;
+  opacity: 1;
 }
 
 .footer-copy {
   text-align: center;
-  color: rgba(255, 255, 255, 0.7);
-  font-size: 1.14rem;
+  color: #d1d5db;
+  font-size: 0.75rem;
+  line-height: 1.5;
 }
 
 @media (max-width: 991px) {
+  .site-footer {
+    padding: 32px 0 20px;
+  }
+
+  .footer-about {
+    max-width: none;
+  }
+
   .footer-brand {
-    font-size: 1.6rem;
-  }
-
-  .footer-about,
-  .footer-links a,
-  .footer-contact li {
     font-size: 1rem;
-  }
-
-  .footer-title {
-    font-size: 1.2rem;
-  }
-
-  .footer-copy {
-    font-size: 0.94rem;
   }
 }
 
