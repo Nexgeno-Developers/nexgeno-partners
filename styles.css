@@ -3433,30 +3433,47 @@ body {
 .page-apply .apply-form-card {
   background: #fff;
   border-radius: 14px;
-  padding: 28px 22px 30px;
+  padding: 28px 20px 32px;
   border: 1px solid #e8eaed;
   box-shadow: 0 10px 36px rgba(26, 43, 72, 0.08);
 }
 
 @media (min-width: 768px) {
   .page-apply .apply-form-card {
-    padding: 32px 36px 34px;
+    padding: 36px 40px 40px;
   }
 }
 
-.page-apply .apply-form-card-title {
-  margin: 0 0 8px;
-  font-size: 1.35rem;
-  font-weight: 800;
-  color: #1a2b48;
-  letter-spacing: -0.3px;
+.page-apply .apply-form-block {
+  margin-bottom: 28px;
 }
 
-.page-apply .apply-form-card-lead {
-  margin: 0 0 22px;
-  font-size: 0.95rem;
-  color: #64748b;
-  line-height: 1.5;
+.page-apply .apply-form-block--tight {
+  margin-bottom: 18px;
+}
+
+.page-apply .apply-section-heading {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 1.05rem;
+  font-weight: 800;
+  color: #1a2b48;
+  margin: 0 0 16px;
+  letter-spacing: -0.2px;
+}
+
+.page-apply .apply-section-heading i {
+  color: #f26522;
+  font-size: 1.15rem;
+}
+
+.page-apply .apply-section-heading--plain {
+  gap: 0;
+}
+
+.page-apply .apply-section-heading .apply-form-req {
+  margin-left: 4px;
 }
 
 .page-apply .apply-form-label {
@@ -3472,6 +3489,21 @@ body {
   font-weight: 800;
 }
 
+.page-apply .apply-input-wrap {
+  position: relative;
+}
+
+.page-apply .apply-input-icon {
+  position: absolute;
+  left: 14px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #f26522;
+  font-size: 1rem;
+  pointer-events: none;
+  z-index: 1;
+}
+
 .page-apply .apply-form-control {
   display: block;
   width: 100%;
@@ -3479,12 +3511,16 @@ body {
   font-size: 0.95rem;
   line-height: 1.45;
   color: #2d3748;
-  background: #f3f4f6;
-  border: 1px solid #e2e5e9;
-  border-radius: 9px;
+  background: #fff;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
   transition:
     border-color 0.15s ease,
     box-shadow 0.15s ease;
+}
+
+.page-apply .apply-form-control--icon {
+  padding-left: 42px;
 }
 
 .page-apply .apply-form-control::placeholder {
@@ -3494,26 +3530,248 @@ body {
 .page-apply .apply-form-control:focus {
   outline: none;
   border-color: #f26522;
-  box-shadow: 0 0 0 3px rgba(242, 101, 34, 0.15);
-  background: #fff;
-}
-
-.page-apply .apply-form-select {
-  appearance: auto;
+  box-shadow: 0 0 0 3px rgba(242, 101, 34, 0.12);
 }
 
 .page-apply .apply-form-textarea {
-  min-height: 130px;
+  min-height: 140px;
   resize: vertical;
+  background: #fff;
+}
+
+.page-apply .apply-choice-stack {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.page-apply .apply-radio-card {
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+  margin: 0;
+  padding: 16px 18px;
+  border: 1px solid #e2e5e9;
+  border-radius: 10px;
+  background: #fff;
+  cursor: pointer;
+  transition:
+    border-color 0.15s ease,
+    box-shadow 0.15s ease;
+}
+
+.page-apply .apply-radio-card:has(.apply-radio-input:checked) {
+  border-color: #f26522;
+  box-shadow: 0 0 0 1px rgba(242, 101, 34, 0.25);
+}
+
+.page-apply .apply-radio-card:focus-within {
+  outline: 2px solid rgba(242, 101, 34, 0.45);
+  outline-offset: 2px;
+}
+
+.page-apply .apply-radio-input {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+.page-apply .apply-radio-dot {
+  flex-shrink: 0;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  border: 2px solid #cbd5e1;
+  margin-top: 2px;
+  position: relative;
+  transition: border-color 0.15s ease;
+}
+
+.page-apply .apply-radio-card:has(.apply-radio-input:checked) .apply-radio-dot {
+  border-color: #f26522;
+  background: #fff;
+}
+
+.page-apply .apply-radio-card:has(.apply-radio-input:checked) .apply-radio-dot::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #f26522;
+}
+
+.page-apply .apply-radio-body {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  min-width: 0;
+}
+
+.page-apply .apply-radio-body strong {
+  font-size: 0.98rem;
+  font-weight: 700;
+  color: #1a2b48;
+}
+
+.page-apply .apply-radio-desc {
+  font-size: 0.88rem;
+  line-height: 1.45;
+  color: #64748b;
+}
+
+.page-apply .apply-service-card {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 0;
+  min-height: 100%;
+  padding: 12px 12px 12px 14px;
+  border: 1px solid #e2e5e9;
+  border-radius: 10px;
+  background: #fff;
+  cursor: pointer;
+  transition:
+    border-color 0.15s ease,
+    box-shadow 0.15s ease;
+}
+
+.page-apply .apply-service-card:has(.apply-service-input:checked) {
+  border-color: #f26522;
+  box-shadow: 0 0 0 1px rgba(242, 101, 34, 0.2);
+}
+
+.page-apply .apply-service-card:focus-within {
+  outline: 2px solid rgba(242, 101, 34, 0.35);
+  outline-offset: 2px;
+}
+
+.page-apply .apply-service-input {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+.page-apply .apply-service-marker {
+  flex-shrink: 0;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 2px solid #cbd5e1;
+  position: relative;
+}
+
+.page-apply .apply-service-card:has(.apply-service-input:checked) .apply-service-marker {
+  border-color: #f26522;
+  background: #f26522;
+}
+
+.page-apply .apply-service-card:has(.apply-service-input:checked) .apply-service-marker::after {
+  content: "\F26E";
+  font-family: bootstrap-icons;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  font-size: 0.55rem;
+  line-height: 1;
+}
+
+.page-apply .apply-service-label {
+  font-size: 0.86rem;
+  font-weight: 600;
+  color: #1a2b48;
+  line-height: 1.3;
+}
+
+.page-apply .apply-agree-label {
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  margin: 0;
+  cursor: pointer;
+  font-size: 0.92rem;
+  line-height: 1.5;
+  color: #475569;
+}
+
+.page-apply .apply-agree-input {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+.page-apply .apply-agree-box {
+  flex-shrink: 0;
+  width: 22px;
+  height: 22px;
+  border-radius: 6px;
+  border: 2px solid #cbd5e1;
+  margin-top: 2px;
+  position: relative;
+  transition: border-color 0.15s ease, background 0.15s ease;
+}
+
+.page-apply .apply-agree-label:has(.apply-agree-input:checked) .apply-agree-box {
+  border-color: #f26522;
+  background: #f26522;
+}
+
+.page-apply .apply-agree-label:has(.apply-agree-input:checked) .apply-agree-box::after {
+  content: "\F26E";
+  font-family: bootstrap-icons;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  font-size: 0.6rem;
+}
+
+.page-apply .apply-agree-text a {
+  color: #f26522;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.page-apply .apply-agree-text a:hover,
+.page-apply .apply-agree-text a:focus {
+  text-decoration: underline;
 }
 
 .page-apply .apply-form-submit {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  margin-top: 4px;
-  padding: 12px 26px;
-  font-size: 0.98rem;
+  gap: 8px;
+  margin-top: 8px;
+  padding: 14px 24px;
+  font-size: 1rem;
   font-weight: 700;
   color: #fff;
   background: #f26522;
@@ -3530,4 +3788,20 @@ body {
   background: #e05a1c;
   border-color: #e05a1c;
   color: #fff;
+}
+
+.page-apply .apply-form-security {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  margin: 20px 0 0;
+  font-size: 0.85rem;
+  color: #64748b;
+  text-align: center;
+}
+
+.page-apply .apply-form-security i {
+  color: #94a3b8;
+  font-size: 1.1rem;
 }
