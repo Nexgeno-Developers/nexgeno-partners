@@ -35,7 +35,7 @@ $heroWrapExtraClass = $heroWrapExtraClass ?? '';
             <li class="nav-item"><a class="nav-link <?php echo $activePage === 'partner-types' ? 'active' : ''; ?>" href="partner-types.php">Partner Types</a></li>
             <li class="nav-item"><a class="nav-link <?php echo $activePage === 'onboarding' ? 'active' : ''; ?>" href="onboarding.php">Onboarding</a></li>
             <li class="nav-item"><a class="nav-link <?php echo $activePage === 'about' ? 'active' : ''; ?>" href="about.php">About</a></li>
-            <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+            <li class="nav-item"><a class="nav-link <?php echo $activePage === 'contact' ? 'active' : ''; ?>" href="contact.php">Contact</a></li>
           </ul>
           <a class="btn btn-sm hero-top-btn" href="apply.html">Become a Partner</a>
         </div>

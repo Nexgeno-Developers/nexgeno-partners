@@ -26,7 +26,7 @@
           <h6 class="footer-title">Company</h6>
           <ul class="footer-links">
             <li><a href="about.php">About Us</a></li>
-            <li><a href="contact.html">Contact</a></li>
+            <li><a href="contact.php">Contact</a></li>
             <li><a href="terms.html">Terms &amp; Conditions</a></li>
             <li><a href="privacy.html">Privacy Policy</a></li>
           </ul>

@@ -203,7 +203,7 @@ include 'header.php';
         <p>Talk to our partner team and we&apos;ll help you choose the best option for your situation.</p>
         <div class="partner-types-bottom-cta-actions">
           <a href="apply.html" class="btn partner-types-bottom-cta-primary">Apply Now <span aria-hidden="true">→</span></a>
-          <a href="contact.html" class="btn partner-types-bottom-cta-secondary">Talk to Our Team</a>
+          <a href="contact.php" class="btn partner-types-bottom-cta-secondary">Talk to Our Team</a>
         </div>
       </div>
     </div>

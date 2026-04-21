@@ -134,7 +134,7 @@ include 'header.php';
         <p>The application takes just 5 minutes. Start your journey today!</p>
         <div class="onboarding-ready-actions">
           <a href="apply.html" class="btn onboarding-ready-primary">Start Application <span aria-hidden="true">→</span></a>
-          <a href="contact.html" class="btn onboarding-ready-secondary">Contact Us First</a>
+          <a href="contact.php" class="btn onboarding-ready-secondary">Contact Us First</a>
         </div>
       </div>
     </div>
