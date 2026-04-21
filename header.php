@@ -14,7 +14,7 @@ $heroWrapExtraClass = $heroWrapExtraClass ?? '';
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <link href="styles.css?v=1.1" rel="stylesheet">
+  <link href="styles.css?v=1.2" rel="stylesheet">
 </head>
 <body class="hero-page<?php echo $bodyPageClass !== '' ? ' ' . htmlspecialchars($bodyPageClass, ENT_QUOTES, 'UTF-8') : ''; ?>">
   <div class="hero-wrap<?php echo $compactHeroWrap ? ' hero-wrap-compact' : ''; ?><?php echo $heroWrapExtraClass !== '' ? ' ' . htmlspecialchars($heroWrapExtraClass, ENT_QUOTES, 'UTF-8') : ''; ?>">
