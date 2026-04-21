@@ -53,7 +53,7 @@ include 'header.php';
               </ul>
             </div>
 
-            <a href="apply.html" class="btn partner-tier-btn partner-tier-btn--outline w-100">Apply as Affiliate <i class="bi bi-arrow-right-short"></i></a>
+            <a href="apply.php" class="btn partner-tier-btn partner-tier-btn--outline w-100">Apply as Affiliate <i class="bi bi-arrow-right-short"></i></a>
           </article>
         </div>
 
@@ -89,7 +89,7 @@ include 'header.php';
               </ul>
             </div>
 
-            <a href="apply.html" class="btn partner-tier-btn partner-tier-btn--primary w-100">Apply as Business <i class="bi bi-arrow-right-short"></i></a>
+            <a href="apply.php" class="btn partner-tier-btn partner-tier-btn--primary w-100">Apply as Business <i class="bi bi-arrow-right-short"></i></a>
           </article>
         </div>
 
@@ -125,7 +125,7 @@ include 'header.php';
               </ul>
             </div>
 
-            <a href="apply.html" class="btn partner-tier-btn partner-tier-btn--outline w-100">Apply as Authorized <i class="bi bi-arrow-right-short"></i></a>
+            <a href="apply.php" class="btn partner-tier-btn partner-tier-btn--outline w-100">Apply as Authorized <i class="bi bi-arrow-right-short"></i></a>
           </article>
         </div>
       </div>
@@ -202,7 +202,7 @@ include 'header.php';
         <h2 id="partner-types-bottom-cta-heading">Not Sure Which Level is Right for You?</h2>
         <p>Talk to our partner team and we&apos;ll help you choose the best option for your situation.</p>
         <div class="partner-types-bottom-cta-actions">
-          <a href="apply.html" class="btn partner-types-bottom-cta-primary">Apply Now <span aria-hidden="true">→</span></a>
+          <a href="apply.php" class="btn partner-types-bottom-cta-primary">Apply Now <span aria-hidden="true">→</span></a>
           <a href="contact.php" class="btn partner-types-bottom-cta-secondary">Talk to Our Team</a>
         </div>
       </div>

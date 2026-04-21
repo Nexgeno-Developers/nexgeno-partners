@@ -16,8 +16,8 @@ include 'header.php';
           ecommerce, digital marketing, cloud &amp; IT services to your clients - without hiring a single technical resource.
         </p>
         <div class="d-flex flex-wrap justify-content-center gap-3 mt-4">
-          <a class="btn hero-btn-primary" href="apply.html">Become a Partner Now</a>
-          <a class="btn hero-btn-secondary" href="apply.html">Apply for Channel Partnership</a>
+          <a class="btn hero-btn-primary" href="apply.php">Become a Partner Now</a>
+          <a class="btn hero-btn-secondary" href="apply.php">Apply for Channel Partnership</a>
         </div>
 
         <div class="row g-3 justify-content-center hero-stats">
@@ -70,7 +70,7 @@ include 'header.php';
             <li>Transparent commission and payment system</li>
             <li>Dedicated partner support via WhatsApp, call &amp; email</li>
           </ul>
-          <a href="apply.html" class="btn income-cta-btn">Submit Your Partner Application <i class="bi bi-arrow-right-short"></i></a>
+          <a href="apply.php" class="btn income-cta-btn">Submit Your Partner Application <i class="bi bi-arrow-right-short"></i></a>
         </div>
 
         <div class="col-lg-6">
@@ -332,7 +332,7 @@ include 'header.php';
       </div>
 
       <div class="text-center mt-4">
-        <a href="apply.html" class="btn model-cta-btn">
+        <a href="apply.php" class="btn model-cta-btn">
           Apply as Affiliate / Business / ACP Partner <i class="bi bi-arrow-right-short"></i>
         </a>
       </div>
@@ -485,7 +485,7 @@ include 'header.php';
           Start your journey as a Nexgeno Channel Partner today and build a profitable,
           recurring, service-based business with a trusted IT company behind you.
         </p>
-        <a href="apply.html" class="btn final-cta-btn mt-3">
+        <a href="apply.php" class="btn final-cta-btn mt-3">
           Apply Now to Become a Nexgeno Channel Partner <i class="bi bi-arrow-right-short"></i>
         </a>
 

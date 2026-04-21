@@ -180,7 +180,7 @@ include 'header.php';
         <h2 id="about-partner-cta-heading">Partner with Us</h2>
         <p>Join our growing network of channel partners and build a profitable business together</p>
         <div class="about-partner-cta-actions">
-          <a href="apply.html" class="btn about-partner-cta-primary">Become a Partner <span aria-hidden="true">→</span></a>
+          <a href="apply.php" class="btn about-partner-cta-primary">Become a Partner <span aria-hidden="true">→</span></a>
           <a href="contact.php" class="btn about-partner-cta-secondary">Contact Us</a>
         </div>
       </div>

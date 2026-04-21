@@ -147,7 +147,7 @@ include 'header.php';
       <h2>Ready to Start Selling These Services?</h2>
       <p>Join our partner program today and get access to sales materials, training, and dedicated support.</p>
       <div class="d-flex justify-content-center gap-2 flex-wrap mt-3">
-        <a href="apply.html" class="btn service-apply-btn">Apply Now <i class="bi bi-arrow-right-short"></i></a>
+        <a href="apply.php" class="btn service-apply-btn">Apply Now <i class="bi bi-arrow-right-short"></i></a>
         <a href="commission.php" class="btn service-outline-btn">View Commission Details</a>
       </div>
     </div>

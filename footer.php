@@ -18,7 +18,7 @@
             <li><a href="commission.php">Commission</a></li>
             <li><a href="partner-types.php">Partner Types</a></li>
             <li><a href="onboarding.php">Onboarding</a></li>
-            <li><a href="apply.html">Apply Now</a></li>
+            <li><a href="apply.php">Apply Now</a></li>
           </ul>
         </div>
 

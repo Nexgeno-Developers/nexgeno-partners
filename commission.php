@@ -199,7 +199,7 @@ include 'header.php';
         <span class="commission-cta-icon" aria-hidden="true"><i class="bi bi-lightning"></i></span>
         <h2 id="commission-cta-heading">Start Earning Today</h2>
         <p>Join thousands of partners already earning with Nexgeno</p>
-        <a href="apply.html" class="btn commission-cta-btn">Apply for Partnership <span class="commission-cta-arrow" aria-hidden="true">→</span></a>
+        <a href="apply.php" class="btn commission-cta-btn">Apply for Partnership <span class="commission-cta-arrow" aria-hidden="true">→</span></a>
       </div>
     </div>
   </section>

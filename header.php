@@ -37,7 +37,7 @@ $heroWrapExtraClass = $heroWrapExtraClass ?? '';
             <li class="nav-item"><a class="nav-link <?php echo $activePage === 'about' ? 'active' : ''; ?>" href="about.php">About</a></li>
             <li class="nav-item"><a class="nav-link <?php echo $activePage === 'contact' ? 'active' : ''; ?>" href="contact.php">Contact</a></li>
           </ul>
-          <a class="btn btn-sm hero-top-btn" href="apply.html">Become a Partner</a>
+          <a class="btn btn-sm hero-top-btn" href="apply.php">Become a Seller</a>
         </div>
       </div>
     </nav>
