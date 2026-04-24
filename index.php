@@ -1,5 +1,6 @@
 <?php
 $activePage = 'home';
+$compactHeroWrap = true;
 include 'header.php';
 ?>
 
