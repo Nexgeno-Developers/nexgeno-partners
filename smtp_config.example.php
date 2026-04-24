@@ -10,16 +10,19 @@ return [
     'from_name' => 'Nexgeno Partners Website',
     'to' => [
         [
-            'email' => 'mehtab.makent@gmail.com',
-            'name' => 'Mehtab',
+            'email' => 'tamir@nexgeno.in',
+            'name' => 'Tamir',
         ],
         [
-            'email' => 'ansarimehtab645@gmail.com',
-            'name' => 'Ansari Mehtab',
+            'email' => 'arif@nexgeno.in',
+            'name' => 'Arif',
+        ],
+
+        [
+            'email' => 'sales@nexgeno.in',
+            'name' => 'Sales Team',
         ],
     ],
-    'to_email' => 'mehtab.makent@gmail.com',
-    'to_name' => 'Mehtab',
     'timeout' => 20,
     'verify_peer' => true,
     'allow_self_signed' => false,
