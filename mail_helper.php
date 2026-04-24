@@ -49,6 +49,7 @@ function nx_mail_config()
         'password' => getenv('SMTP_PASSWORD') ?: '',
         'from_email' => getenv('SMTP_FROM_EMAIL') ?: '',
         'from_name' => getenv('SMTP_FROM_NAME') ?: 'Nexgeno Partners Website',
+        'to' => [],
         'to_email' => getenv('SMTP_TO_EMAIL') ?: 'info@nexgeno.in',
         'to_name' => getenv('SMTP_TO_NAME') ?: 'Nexgeno Partners',
         'timeout' => getenv('SMTP_TIMEOUT') ?: 20,
@@ -76,6 +77,7 @@ function nx_mail_config()
     $config['from_name'] = trim((string) $config['from_name']);
     $config['to_email'] = trim((string) $config['to_email']);
     $config['to_name'] = trim((string) $config['to_name']);
+    $config['to'] = nx_normalize_email_contacts($config['to'] ?? []);
     $config['timeout'] = (int) $config['timeout'];
     $config['timeout'] = $config['timeout'] > 0 ? $config['timeout'] : 20;
     $config['verify_peer'] = filter_var($config['verify_peer'], FILTER_VALIDATE_BOOLEAN);
@@ -89,7 +91,7 @@ function nx_mail_is_configured(array $config)
 {
     return $config['host'] !== ''
         && $config['from_email'] !== ''
-        && $config['to_email'] !== '';
+        && ($config['to'] !== [] || $config['to_email'] !== '');
 }
 
 function nx_send_smtp_mail(array $message)
@@ -110,12 +112,16 @@ function nx_send_smtp_mail(array $message)
         ];
     }
 
-    $recipients = nx_normalize_email_contacts($message['to'] ?? [
-        [
-            'email' => $config['to_email'],
-            'name' => $config['to_name'],
-        ],
-    ]);
+    $defaultRecipients = $config['to'] !== []
+        ? $config['to']
+        : [
+            [
+                'email' => $config['to_email'],
+                'name' => $config['to_name'],
+            ],
+        ];
+
+    $recipients = nx_normalize_email_contacts($message['to'] ?? $defaultRecipients);
 
     $replyTo = nx_normalize_email_contacts($message['reply_to'] ?? []);
     $replyTo = $replyTo !== [] ? $replyTo[0] : null;
