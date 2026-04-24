@@ -202,7 +202,7 @@ include 'header.php';
               </div>
             <?php endif; ?>
 
-            <form class="contact-form" action="contact.php" method="post" novalidate>
+            <form class="contact-form" action="contact.php" method="post" novalidate data-loading-form>
               <div class="d-none" aria-hidden="true">
                 <label for="contact-website">Website</label>
                 <input type="text" id="contact-website" name="website" tabindex="-1" autocomplete="off">
@@ -241,7 +241,12 @@ include 'header.php';
                   <?php endif; ?>
                 </div>
                 <div class="col-12">
-                  <button type="submit" class="contact-form-submit">Send Message <i class="bi bi-send-fill" aria-hidden="true"></i></button>
+                  <button type="submit" class="contact-form-submit" data-loading-button>
+                    <span class="form-submit-label">Send Message</span>
+                    <i class="bi bi-send-fill form-submit-icon" aria-hidden="true"></i>
+                    <span class="form-submit-spinner spinner-border spinner-border-sm d-none" aria-hidden="true"></span>
+                    <span class="form-submit-loading-label d-none">Sending Message...</span>
+                  </button>
                 </div>
               </div>
             </form>

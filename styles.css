@@ -3420,6 +3420,18 @@ body {
   font-size: 0.85rem;
 }
 
+.contact-form-submit.is-loading,
+.apply-form-submit.is-loading {
+  cursor: wait;
+  opacity: 0.92;
+}
+
+.form-submit-spinner {
+  width: 1rem;
+  height: 1rem;
+  border-width: 0.14em;
+}
+
 .page-contact .contact-office-section {
   padding: 8px 0 72px;
   background: #f8f9fa;
@@ -3903,6 +3915,10 @@ body {
   background: var(--nx-accent-grad-hover);
   border-color: transparent;
   color: #fff;
+}
+
+.page-apply .apply-form-submit .form-submit-icon {
+  line-height: 1;
 }
 
 .page-apply .apply-form-security {

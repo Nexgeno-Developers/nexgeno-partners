@@ -47,5 +47,96 @@
   </footer>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    (function () {
+      function resetLoadingForms() {
+        document.querySelectorAll('form[data-loading-form]').forEach(function (form) {
+          form.dataset.submitting = 'false';
+
+          form.querySelectorAll('button[type="submit"][data-loading-button]').forEach(function (button) {
+            button.disabled = false;
+            button.classList.remove('is-loading');
+            button.removeAttribute('aria-busy');
+
+            var defaultLabel = button.querySelector('.form-submit-label');
+            var loadingLabel = button.querySelector('.form-submit-loading-label');
+            var icon = button.querySelector('.form-submit-icon');
+            var spinner = button.querySelector('.form-submit-spinner');
+
+            if (defaultLabel) {
+              defaultLabel.classList.remove('d-none');
+            }
+
+            if (loadingLabel) {
+              loadingLabel.classList.add('d-none');
+            }
+
+            if (icon) {
+              icon.classList.remove('d-none');
+            }
+
+            if (spinner) {
+              spinner.classList.add('d-none');
+            }
+          });
+        });
+      }
+
+      function bindLoadingForms() {
+        document.querySelectorAll('form[data-loading-form]').forEach(function (form) {
+          form.addEventListener('submit', function (event) {
+            if (form.dataset.submitting === 'true') {
+              event.preventDefault();
+              return;
+            }
+
+            form.dataset.submitting = 'true';
+
+            var activeButton = event.submitter || form.querySelector('button[type="submit"][data-loading-button]');
+            if (!activeButton) {
+              return;
+            }
+
+            form.querySelectorAll('button[type="submit"][data-loading-button]').forEach(function (button) {
+              button.disabled = true;
+            });
+
+            activeButton.classList.add('is-loading');
+            activeButton.setAttribute('aria-busy', 'true');
+
+            var defaultLabel = activeButton.querySelector('.form-submit-label');
+            var loadingLabel = activeButton.querySelector('.form-submit-loading-label');
+            var icon = activeButton.querySelector('.form-submit-icon');
+            var spinner = activeButton.querySelector('.form-submit-spinner');
+
+            if (defaultLabel) {
+              defaultLabel.classList.add('d-none');
+            }
+
+            if (loadingLabel) {
+              loadingLabel.classList.remove('d-none');
+            }
+
+            if (icon) {
+              icon.classList.add('d-none');
+            }
+
+            if (spinner) {
+              spinner.classList.remove('d-none');
+            }
+          });
+        });
+      }
+
+      document.addEventListener('DOMContentLoaded', function () {
+        resetLoadingForms();
+        bindLoadingForms();
+      });
+
+      window.addEventListener('pageshow', function () {
+        resetLoadingForms();
+      });
+    }());
+  </script>
 </body>
 </html>

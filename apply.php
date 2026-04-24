@@ -205,7 +205,7 @@ include 'header.php';
               </div>
             <?php endif; ?>
 
-            <form class="apply-form" action="apply.php" method="post" novalidate>
+            <form class="apply-form" action="apply.php" method="post" novalidate data-loading-form>
               <div class="d-none" aria-hidden="true">
                 <label for="apply-website">Website</label>
                 <input type="text" id="apply-website" name="website" tabindex="-1" autocomplete="off">
@@ -393,7 +393,12 @@ include 'header.php';
                 <?php endif; ?>
               </div>
 
-              <button type="submit" class="apply-form-submit w-100">Submit Application <span aria-hidden="true">&rarr;</span></button>
+              <button type="submit" class="apply-form-submit w-100" data-loading-button>
+                <span class="form-submit-label">Submit Application</span>
+                <span class="form-submit-icon" aria-hidden="true">&rarr;</span>
+                <span class="form-submit-spinner spinner-border spinner-border-sm d-none" aria-hidden="true"></span>
+                <span class="form-submit-loading-label d-none">Submitting Application...</span>
+              </button>
 
               <p class="apply-form-security"><i class="bi bi-shield-check" aria-hidden="true"></i> Your information is secure and will not be shared with third parties.</p>
             </form>
