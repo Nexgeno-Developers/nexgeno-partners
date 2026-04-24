@@ -3937,3 +3937,44 @@ body {
   color: #94a3b8;
   font-size: 1.1rem;
 }
+
+/* Poppins title safety */
+.hero-title,
+.income-title,
+.ideal-title,
+.commission-title,
+.support-title,
+.model-title,
+.earning-title,
+.faq-title,
+.final-cta-title,
+.services-hero h1,
+.commission-page-hero h1,
+.page-partner-types .partner-types-hero-inner h1,
+.page-onboarding .onboarding-hero-inner h1,
+.page-about .about-hero-inner h1,
+.page-contact .contact-hero-inner h1,
+.page-apply .apply-hero-inner h1 {
+  line-height: 1.16;
+}
+
+.nx-gradient-text,
+.hero-title span,
+.income-title span,
+.ideal-title span,
+.commission-title span,
+.support-title span,
+.model-title span,
+.earning-title span,
+.faq-title span,
+.final-cta-title span,
+.services-hero h1 span,
+.commission-page-hero h1 span,
+.page-partner-types .partner-types-hero-inner h1 span,
+.page-onboarding .onboarding-hero-inner h1 span,
+.page-about .about-hero-inner h1 span,
+.page-contact .contact-hero-inner h1 span,
+.page-apply .apply-hero-inner h1 span {
+  line-height: inherit;
+  padding-bottom: 0.08em;
+}
