@@ -374,7 +374,7 @@ body {
 
 .income-section {
   background: #f4f6fa;
-  padding: 70px 0 90px;
+  padding: 70px 0 70px;
 }
 
 .income-title {
@@ -483,12 +483,12 @@ body {
 }
 
 .ideal-section {
-  background: #f4f6fa;
-  padding: 8px 0 90px;
+  background: #fff;
+  padding: 70px 0 70px;
 }
 
 .ideal-title {
-  font-size: clamp(2rem, 3.8vw, 3.25rem);
+  font-size: clamp(2rem, 3.8vw, 2.5rem);
   font-weight: 800;
   line-height: 1.08;
   color: #18253a;
@@ -565,7 +565,7 @@ body {
 
 .commission-section {
   background: #f4f6fa;
-  padding: 10px 0 95px;
+  padding: 70px 0 70px;
 }
 
 .commission-title {

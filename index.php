@@ -55,7 +55,7 @@ include 'header.php';
 
   <section class="income-section">
     <div class="container">
-      <div class="row align-items-start g-4 g-lg-5">
+      <div class="row align-items-center g-4 g-lg-5">
         <div class="col-lg-6">
           <h2 class="income-title">
             Grow Your Income <br>
@@ -222,7 +222,7 @@ include 'header.php';
 
   <section class="support-section">
     <div class="container">
-      <div class="row align-items-start g-4 g-lg-5">
+      <div class="row align-items-center g-4 g-lg-5">
         <div class="col-lg-6">
           <div class="row g-3">
             <div class="col-sm-6">
