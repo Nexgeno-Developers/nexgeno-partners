@@ -227,7 +227,7 @@ body {
 }
 
 .hero-main {
-  padding: 64px 0 40px;
+  padding: 70px 0 70px;
 }
 
 .hero-pill {
@@ -286,14 +286,17 @@ body {
 
 .hero-btn-primary {
   background: var(--nx-accent-grad);
+  border: 0;
   color: #fff;
-  /* box-shadow: 0 10px 24px rgba(168, 85, 247, 0.35); */
+  box-shadow: none;
 }
 
 .hero-btn-primary:hover,
 .hero-btn-primary:focus {
   color: #fff;
   background: var(--nx-accent-grad-hover);
+  border: 0;
+  box-shadow: none;
 }
 
 .hero-btn-secondary {
@@ -331,7 +334,7 @@ body {
 .page-home .hero-stat-card {
   background: #fff;
   border-color: rgba(27, 48, 82, 0.1);
-  box-shadow: 0 14px 36px rgba(27, 48, 82, 0.08);
+  /* box-shadow: 0 14px 36px rgba(27, 48, 82, 0.08); */
 }
 
 .hero-stat-card i {
@@ -375,7 +378,7 @@ body {
 }
 
 .income-title {
-  font-size: clamp(2rem, 4vw, 3.5rem);
+  font-size: clamp(2rem, 4vw, 2.5rem);
   font-weight: 800;
   line-height: 1.05;
   color: #18253a;
@@ -391,8 +394,8 @@ body {
 }
 
 .income-text {
-  color: #5d697b;
-  font-size: 1.06rem;
+  color: #000;
+  font-size: 16px;
   line-height: 1.7;
   max-width: 620px;
 }

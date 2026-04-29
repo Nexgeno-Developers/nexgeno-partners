@@ -50,7 +50,7 @@ include 'header.php';
         </div>
       </div>
     </header>
-    <div class="hero-curve"></div>
+    <!-- <div class="hero-curve"></div> -->
   </div>
 
   <section class="income-section">
