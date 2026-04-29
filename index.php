@@ -1,5 +1,6 @@
 <?php
 $activePage = 'home';
+$bodyPageClass = 'page-home';
 $compactHeroWrap = true;
 include 'header.php';
 ?>

@@ -154,10 +154,21 @@ body {
   min-height: 0;
 }
 
+.page-home .hero-wrap {
+  background: #fff;
+  color: var(--nx-text);
+}
+
 .hero-navbar {
   background: rgba(27, 48, 82, 0.92);
   backdrop-filter: blur(4px);
   border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.page-home .hero-navbar {
+  background: #fff;
+  border-bottom-color: rgba(27, 48, 82, 0.08);
+  /* box-shadow: 0 8px 24px rgba(27, 48, 82, 0.06); */
 }
 
 .site-logo {
@@ -178,6 +189,10 @@ body {
   color: rgba(255, 255, 255, 0.82);
   font-size: 13px;
   display: inline-block;
+}
+
+.page-home .hero-navbar .nav-link {
+  color: rgba(27, 48, 82, 0.78);
 }
 
 .hero-navbar .nav-link.active,
@@ -203,6 +218,14 @@ body {
   background: var(--nx-accent-grad-hover);
 }
 
+.page-home .hero-navbar .navbar-toggler {
+  border-color: rgba(27, 48, 82, 0.22);
+}
+
+.page-home .hero-navbar .navbar-toggler-icon {
+  filter: invert(19%) sepia(28%) saturate(1197%) hue-rotate(176deg) brightness(92%) contrast(92%);
+}
+
 .hero-main {
   padding: 64px 0 40px;
 }
@@ -217,11 +240,21 @@ body {
   font-size: 13px;
 }
 
+.page-home .hero-pill {
+  background: #f4f7fb;
+  border-color: rgba(27, 48, 82, 0.12);
+  color: var(--nx-navy);
+}
+
 .hero-title {
   font-size: clamp(2rem, 5vw, 4rem);
   font-weight: 800;
-  line-height: 1.14;
+  line-height: 1.29 !important;
   letter-spacing: -0.8px;
+}
+
+.page-home .hero-title {
+  color: var(--nx-navy);
 }
 
 .hero-title span {
@@ -240,6 +273,10 @@ body {
   line-height: 1.7;
 }
 
+.page-home .hero-subtitle {
+  color: rgba(27, 48, 82, 0.78);
+}
+
 .hero-btn-primary,
 .hero-btn-secondary {
   padding: 13px 26px;
@@ -250,7 +287,7 @@ body {
 .hero-btn-primary {
   background: var(--nx-accent-grad);
   color: #fff;
-  box-shadow: 0 10px 24px rgba(168, 85, 247, 0.35);
+  /* box-shadow: 0 10px 24px rgba(168, 85, 247, 0.35); */
 }
 
 .hero-btn-primary:hover,
@@ -263,6 +300,19 @@ body {
   color: #fff;
   border: 1px solid rgba(255, 255, 255, 0.4);
   background: rgba(255, 255, 255, 0.04);
+}
+
+.page-home .hero-btn-secondary {
+  color: var(--nx-navy);
+  border-color: rgba(27, 48, 82, 0.18);
+  background: #fff;
+}
+
+.page-home .hero-btn-secondary:hover,
+.page-home .hero-btn-secondary:focus {
+  color: #fff;
+  border-color: transparent;
+  background: var(--nx-accent-grad-hover);
 }
 
 .hero-stats {
@@ -278,6 +328,12 @@ body {
   min-height: 86px;
 }
 
+.page-home .hero-stat-card {
+  background: #fff;
+  border-color: rgba(27, 48, 82, 0.1);
+  box-shadow: 0 14px 36px rgba(27, 48, 82, 0.08);
+}
+
 .hero-stat-card i {
   background: var(--nx-accent-grad);
   -webkit-background-clip: text;
@@ -291,6 +347,10 @@ body {
   font-size: 14px;
   line-height: 1.35;
   color: rgba(255, 255, 255, 0.9);
+}
+
+.page-home .hero-stat-card p {
+  color: rgba(27, 48, 82, 0.82);
 }
 
 .hero-curve {
