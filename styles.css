@@ -482,6 +482,178 @@ body {
   text-align: right;
 }
 
+.client-process-section {
+  background: #fff;
+  padding: 70px 0 70px;
+}
+
+.client-process-title {
+  color: #102944;
+  font-size: clamp(2rem, 4vw, 3.1rem);
+  font-weight: 800;
+  line-height: 1.12;
+  letter-spacing: -0.5px;
+}
+
+.client-process-title span {
+  background: var(--nx-accent-grad);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  display: inline-block;
+}
+
+.client-process-subtitle {
+  color: #566783;
+  font-size: 1.08rem;
+  max-width: 620px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.client-process-track {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 24px;
+  margin: 56px auto 44px;
+}
+
+.client-process-track::before {
+  content: "";
+  position: absolute;
+  left: 7%;
+  right: 7%;
+  top: 136px;
+  height: 2px;
+  background: linear-gradient(to right, rgba(59, 130, 246, 0.22), rgba(168, 85, 247, 0.26), rgba(236, 72, 153, 0.22));
+}
+
+.client-process-step {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 274px;
+  padding: 40px 24px 24px;
+  border: 1px solid rgba(168, 85, 247, 0.18);
+  border-radius: 14px;
+  background: #fff;
+  text-align: center;
+  box-shadow: 0 14px 34px rgba(27, 48, 82, 0.07);
+}
+
+.client-process-number {
+  position: absolute;
+  top: -16px;
+  left: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 34px;
+  height: 34px;
+  transform: translateX(-50%);
+  border-radius: 50%;
+  background: var(--nx-accent-grad);
+  color: #fff;
+  font-size: 0.9rem;
+  font-weight: 800;
+  box-shadow: 0 8px 18px rgba(168, 85, 247, 0.24);
+}
+
+.client-process-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 56px;
+  height: 56px;
+  margin-bottom: 18px;
+  border-radius: 10px;
+  background: linear-gradient(135deg, rgba(59, 130, 246, 0.12), rgba(168, 85, 247, 0.14), rgba(236, 72, 153, 0.12));
+  color: var(--nx-navy);
+  font-size: 1.6rem;
+}
+
+.client-process-step h3 {
+  margin: 0 0 12px;
+  color: #061b36;
+  font-size: 1rem;
+  font-weight: 800;
+  line-height: 1.35;
+}
+
+.client-process-step p {
+  margin: 0;
+  color: #566783;
+  font-size: 0.94rem;
+  line-height: 1.45;
+}
+
+.client-process-btn {
+  background: var(--nx-accent-grad);
+  border: 0;
+  border-radius: 10px;
+  color: #fff;
+  padding: 13px 24px;
+  font-weight: 800;
+  box-shadow: 0 10px 22px rgba(168, 85, 247, 0.28);
+}
+
+.client-process-btn:hover,
+.client-process-btn:focus {
+  background: var(--nx-accent-grad-hover);
+  color: #fff;
+  box-shadow: 0 10px 22px rgba(168, 85, 247, 0.32);
+}
+
+.client-process-btn i {
+  margin-left: 6px;
+}
+
+@media (max-width: 1199px) {
+  .client-process-track {
+    gap: 18px;
+  }
+
+  .client-process-step {
+    padding-left: 18px;
+    padding-right: 18px;
+  }
+}
+
+@media (max-width: 991px) {
+  .client-process-track {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    max-width: 680px;
+  }
+
+  .client-process-track::before {
+    display: none;
+  }
+}
+
+@media (max-width: 575px) {
+  .client-process-section {
+    padding: 58px 0 62px;
+  }
+
+  .client-process-track {
+    grid-template-columns: 1fr;
+    gap: 28px;
+    margin-top: 44px;
+  }
+
+  .client-process-step {
+    min-height: 0;
+  }
+
+  .client-process-btn {
+    width: 100%;
+    max-width: 340px;
+  }
+}
+
 .ideal-section {
   background: #fff;
   padding: 70px 0 70px;
@@ -652,7 +824,7 @@ body {
 
 .support-section {
   background: #f4f6fa;
-  padding: 20px 0 96px;
+  padding: 70px 0 70px;
 }
 
 .support-card {
@@ -736,8 +908,8 @@ body {
 }
 
 .model-section {
-  background: #f4f6fa;
-  padding: 16px 0 95px;
+  background: #fff;
+  padding: 70px 0 70px;
 }
 
 .model-title {
@@ -865,7 +1037,7 @@ body {
 
 .earning-section {
   background: #f4f6fa;
-  padding: 18px 0 105px;
+  padding: 70px 0 70px;
 }
 
 .earning-title {
@@ -1042,8 +1214,8 @@ body {
 }
 
 .faq-section {
-  background: #f4f6fa;
-  padding: 10px 0 110px;
+  background: #fff;
+  padding: 70px 0 70px;
 }
 
 .faq-title {
