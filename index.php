@@ -107,6 +107,62 @@ include 'header.php';
     </div>
   </section>
 
+  <section class="client-process-section" aria-labelledby="client-process-heading">
+    <div class="container">
+      <div class="text-center">
+        <h2 id="client-process-heading" class="client-process-title">
+          You Bring the Client, <span>We Handle the Rest</span>
+        </h2>
+        <p class="client-process-subtitle mt-3">
+          Our streamlined process makes it easy for you to earn.
+        </p>
+      </div>
+
+      <div class="client-process-track">
+        <div class="client-process-step">
+          <span class="client-process-number">1</span>
+          <span class="client-process-icon"><i class="bi bi-chat-square"></i></span>
+          <h3>Generate a Lead</h3>
+          <p>Talk to your contact and understand their business need.</p>
+        </div>
+
+        <div class="client-process-step">
+          <span class="client-process-number">2</span>
+          <span class="client-process-icon"><i class="bi bi-send"></i></span>
+          <h3>Share Lead with Nexgeno</h3>
+          <p>Submit via WhatsApp / Email / Partner Form.</p>
+        </div>
+
+        <div class="client-process-step">
+          <span class="client-process-number">3</span>
+          <span class="client-process-icon"><i class="bi bi-file-earmark-check"></i></span>
+          <h3>We Consult &amp; Propose</h3>
+          <p>Our team prepares proposal, pricing &amp; solution.</p>
+        </div>
+
+        <div class="client-process-step">
+          <span class="client-process-number">4</span>
+          <span class="client-process-icon"><i class="bi bi-credit-card"></i></span>
+          <h3>Client Confirms &amp; Pays</h3>
+          <p>Nexgeno handles onboarding, project execution &amp; delivery.</p>
+        </div>
+
+        <div class="client-process-step">
+          <span class="client-process-number">5</span>
+          <span class="client-process-icon"><i class="bi bi-wallet2"></i></span>
+          <h3>You Get Your Commission</h3>
+          <p>Commission is released within 7 working days after payment receipt.</p>
+        </div>
+      </div>
+
+      <div class="text-center">
+        <a href="apply.php" class="btn client-process-btn">
+          Start Earning as a Nexgeno Partner <i class="bi bi-arrow-right-short"></i>
+        </a>
+      </div>
+    </div>
+  </section>
+
   <section class="ideal-section">
     <div class="container">
       <div class="text-center">
@@ -220,66 +276,6 @@ include 'header.php';
     </div>
   </section>
 
-
-  
-  <section class="client-process-section" aria-labelledby="client-process-heading">
-    <div class="container">
-      <div class="text-center">
-        <h2 id="client-process-heading" class="client-process-title">
-          You Bring the Client, <span>We Handle the Rest</span>
-        </h2>
-        <p class="client-process-subtitle mt-3">
-          Our streamlined process makes it easy for you to earn.
-        </p>
-      </div>
-
-      <div class="client-process-track">
-        <div class="client-process-step">
-          <span class="client-process-number">1</span>
-          <span class="client-process-icon"><i class="bi bi-chat-square"></i></span>
-          <h3>Generate a Lead</h3>
-          <p>Talk to your contact and understand their business need.</p>
-        </div>
-
-        <div class="client-process-step">
-          <span class="client-process-number">2</span>
-          <span class="client-process-icon"><i class="bi bi-send"></i></span>
-          <h3>Share Lead with Nexgeno</h3>
-          <p>Submit via WhatsApp / Email / Partner Form.</p>
-        </div>
-
-        <div class="client-process-step">
-          <span class="client-process-number">3</span>
-          <span class="client-process-icon"><i class="bi bi-file-earmark-check"></i></span>
-          <h3>We Consult &amp; Propose</h3>
-          <p>Our team prepares proposal, pricing &amp; solution.</p>
-        </div>
-
-        <div class="client-process-step">
-          <span class="client-process-number">4</span>
-          <span class="client-process-icon"><i class="bi bi-credit-card"></i></span>
-          <h3>Client Confirms &amp; Pays</h3>
-          <p>Nexgeno handles onboarding, project execution &amp; delivery.</p>
-        </div>
-
-        <div class="client-process-step">
-          <span class="client-process-number">5</span>
-          <span class="client-process-icon"><i class="bi bi-wallet2"></i></span>
-          <h3>You Get Your Commission</h3>
-          <p>Commission is released within 7 working days after payment receipt.</p>
-        </div>
-      </div>
-
-      <div class="text-center">
-        <a href="apply.php" class="btn client-process-btn">
-          Start Earning as a Nexgeno Partner <i class="bi bi-arrow-right-short"></i>
-        </a>
-      </div>
-    </div>
-  </section>
-
-
-  
 
   <section class="support-section">
     <div class="container">

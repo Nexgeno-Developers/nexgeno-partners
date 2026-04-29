@@ -1373,6 +1373,535 @@ body {
   }
 }
 
+/* Homepage finishing pass */
+.page-home {
+  background: #f5f8fc;
+}
+
+.page-home .hero-wrap {
+  background:
+    linear-gradient(180deg, #fff 0%, #fff 55%, #f5f8fc 100%);
+}
+
+.page-home .hero-navbar {
+  background: rgba(255, 255, 255, 0.96);
+  border-bottom-color: rgba(27, 48, 82, 0.08);
+  box-shadow: 0 10px 26px rgba(27, 48, 82, 0.06);
+}
+
+.page-home .hero-navbar .nav-link {
+  border-radius: 999px;
+  padding: 8px 10px;
+  color: rgba(27, 48, 82, 0.74);
+  font-weight: 600;
+}
+
+.page-home .hero-navbar .nav-link.active,
+.page-home .hero-navbar .nav-link:hover {
+  background: rgba(168, 85, 247, 0.1);
+  color: var(--nx-coral-dark);
+  -webkit-background-clip: initial;
+  background-clip: initial;
+}
+
+.page-home .hero-top-btn,
+.page-home .hero-btn-primary,
+.page-home .income-cta-btn,
+.page-home .client-process-btn,
+.page-home .model-cta-btn,
+.page-home .final-cta-btn {
+  border: 0;
+  background: var(--nx-accent-grad);
+  color: #fff;
+  box-shadow: 0 12px 24px rgba(168, 85, 247, 0.24);
+  transition: transform 0.18s ease, box-shadow 0.18s ease, background 0.18s ease;
+}
+
+.page-home .hero-top-btn:hover,
+.page-home .hero-top-btn:focus,
+.page-home .hero-btn-primary:hover,
+.page-home .hero-btn-primary:focus,
+.page-home .income-cta-btn:hover,
+.page-home .income-cta-btn:focus,
+.page-home .client-process-btn:hover,
+.page-home .client-process-btn:focus,
+.page-home .model-cta-btn:hover,
+.page-home .model-cta-btn:focus,
+.page-home .final-cta-btn:hover,
+.page-home .final-cta-btn:focus {
+  background: var(--nx-accent-grad-hover);
+  color: #fff;
+  transform: translateY(-2px);
+  box-shadow: 0 16px 30px rgba(168, 85, 247, 0.3);
+}
+
+.page-home .hero-main {
+  padding: 76px 0 82px;
+}
+
+.page-home .hero-pill {
+  background: linear-gradient(135deg, rgba(59, 130, 246, 0.1), rgba(168, 85, 247, 0.12), rgba(236, 72, 153, 0.1));
+  border-color: rgba(168, 85, 247, 0.16);
+  color: var(--nx-navy);
+  font-weight: 700;
+}
+
+.page-home .hero-title,
+.page-home .income-title,
+.page-home .client-process-title,
+.page-home .ideal-title,
+.page-home .commission-title,
+.page-home .support-title,
+.page-home .model-title,
+.page-home .earning-title,
+.page-home .faq-title,
+.page-home .final-cta-title {
+  letter-spacing: 0;
+}
+
+.page-home .hero-title {
+  max-width: 980px;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 3.65rem;
+  line-height: 1.16 !important;
+}
+
+.page-home .hero-subtitle {
+  color: rgba(27, 48, 82, 0.72);
+  font-size: 1.08rem;
+}
+
+.page-home .hero-btn-primary,
+.page-home .hero-btn-secondary {
+  min-height: 52px;
+  border-radius: 14px;
+}
+
+.page-home .hero-btn-secondary {
+  background: #fff;
+  border: 1px solid rgba(27, 48, 82, 0.14);
+  color: var(--nx-navy);
+  box-shadow: 0 10px 22px rgba(27, 48, 82, 0.06);
+}
+
+.page-home .hero-btn-secondary:hover,
+.page-home .hero-btn-secondary:focus {
+  border-color: rgba(168, 85, 247, 0.4);
+  background: #f8fbff;
+  color: var(--nx-coral-dark);
+}
+
+.page-home .hero-stats {
+  margin-top: 38px;
+}
+
+.page-home .hero-stat-card {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  min-height: 92px;
+  padding: 18px;
+  border-color: rgba(27, 48, 82, 0.08);
+  border-radius: 14px;
+  box-shadow: 0 16px 34px rgba(27, 48, 82, 0.08);
+}
+
+.page-home .hero-stat-card i {
+  flex: 0 0 auto;
+  width: 36px;
+  height: 36px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  border-radius: 10px;
+  background: linear-gradient(135deg, rgba(59, 130, 246, 0.12), rgba(168, 85, 247, 0.14), rgba(236, 72, 153, 0.12));
+  color: var(--nx-coral-dark);
+  -webkit-background-clip: initial;
+  background-clip: initial;
+}
+
+.page-home .hero-stat-card p {
+  margin: 0;
+  font-weight: 600;
+  min-width: 0;
+  overflow-wrap: anywhere;
+}
+
+.page-home .income-section,
+.page-home .client-process-section,
+.page-home .ideal-section,
+.page-home .commission-section,
+.page-home .support-section,
+.page-home .model-section,
+.page-home .earning-section,
+.page-home .faq-section {
+  padding: 82px 0;
+}
+
+.page-home .income-section,
+.page-home .commission-section,
+.page-home .earning-section,
+.page-home .faq-section {
+  background: #f5f8fc;
+}
+
+.page-home .client-process-section,
+.page-home .support-section {
+  background: #fff;
+}
+
+.page-home .ideal-section,
+.page-home .model-section {
+  background: linear-gradient(180deg, #fff 0%, #f8fbff 100%);
+}
+
+.page-home .income-title,
+.page-home .client-process-title,
+.page-home .ideal-title,
+.page-home .commission-title,
+.page-home .model-title,
+.page-home .earning-title,
+.page-home .faq-title {
+  font-size: 2.65rem;
+  line-height: 1.15;
+}
+
+.page-home .income-text,
+.page-home .support-text,
+.page-home .ideal-subtitle,
+.page-home .commission-subtitle,
+.page-home .client-process-subtitle,
+.page-home .model-subtitle,
+.page-home .earning-subtitle,
+.page-home .faq-subtitle {
+  color: #5a6b82;
+}
+
+.page-home .benefit-card,
+.page-home .ideal-card,
+.page-home .commission-card,
+.page-home .support-card,
+.page-home .model-card,
+.page-home .earning-card,
+.page-home .faq-item,
+.page-home .client-process-step {
+  border-color: rgba(27, 48, 82, 0.08);
+  box-shadow: 0 16px 34px rgba(27, 48, 82, 0.07);
+}
+
+.page-home .benefit-card-head,
+.page-home .commission-card-head,
+.page-home .earning-head {
+  background: linear-gradient(135deg, var(--nx-navy-deep), var(--nx-navy), var(--nx-navy-soft));
+}
+
+.page-home .benefit-row {
+  padding: 16px 20px;
+}
+
+.page-home .benefit-row span,
+.page-home .benefit-row strong,
+.page-home .commission-row span,
+.page-home .commission-row strong {
+  min-width: 0;
+  overflow-wrap: anywhere;
+}
+
+.page-home .benefit-row strong,
+.page-home .commission-row strong {
+  color: var(--nx-coral-dark);
+}
+
+.page-home .client-process-track {
+  max-width: 1130px;
+}
+
+.page-home .client-process-step {
+  border-top: 3px solid rgba(168, 85, 247, 0.42);
+}
+
+.page-home .ideal-card,
+.page-home .support-card {
+  height: 100%;
+  transition: transform 0.18s ease, box-shadow 0.18s ease, border-color 0.18s ease;
+}
+
+.page-home .ideal-card:hover,
+.page-home .support-card:hover,
+.page-home .model-card:hover,
+.page-home .commission-card:hover {
+  transform: translateY(-4px);
+  border-color: rgba(168, 85, 247, 0.22);
+  box-shadow: 0 20px 38px rgba(27, 48, 82, 0.1);
+}
+
+.page-home .ideal-icon,
+.page-home .support-icon,
+.page-home .model-icon {
+  background: linear-gradient(135deg, rgba(59, 130, 246, 0.12), rgba(168, 85, 247, 0.14), rgba(236, 72, 153, 0.12));
+  color: var(--nx-coral-dark);
+}
+
+.page-home .ideal-note,
+.page-home .support-note,
+.page-home .commission-note,
+.page-home .earning-note {
+  background: #fff;
+  border-color: rgba(168, 85, 247, 0.16);
+  box-shadow: 0 12px 28px rgba(27, 48, 82, 0.06);
+}
+
+.page-home .commission-card {
+  height: 100%;
+}
+
+.page-home .commission-card-head {
+  min-height: 76px;
+  display: flex;
+  align-items: center;
+  font-size: 1.12rem;
+}
+
+.page-home .commission-row {
+  min-height: 58px;
+}
+
+.page-home .support-card {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  padding: 18px;
+}
+
+.page-home .support-icon {
+  flex: 0 0 auto;
+  margin: 0;
+}
+
+.page-home .support-card p {
+  font-weight: 700;
+}
+
+.page-home .model-card {
+  position: relative;
+  padding: 28px;
+  transition: transform 0.18s ease, box-shadow 0.18s ease, border-color 0.18s ease;
+}
+
+.page-home .model-card h3 {
+  font-size: 1.35rem;
+  line-height: 1.25;
+}
+
+.page-home .model-card-popular {
+  border-color: rgba(168, 85, 247, 0.32);
+}
+
+.page-home .popular-badge {
+  top: -14px;
+  padding: 7px 14px;
+}
+
+.page-home .earning-card {
+  border-radius: 18px;
+}
+
+.page-home .earning-head h3 {
+  font-size: 2.4rem;
+}
+
+.page-home .earning-row-accent {
+  background: linear-gradient(135deg, rgba(59, 130, 246, 0.08), rgba(168, 85, 247, 0.1), rgba(236, 72, 153, 0.08));
+  border-color: rgba(168, 85, 247, 0.18);
+}
+
+.page-home .earning-row p {
+  font-size: 1.18rem;
+}
+
+.page-home .earning-row strong {
+  font-size: 2.35rem;
+}
+
+.page-home .earning-row-accent strong,
+.page-home .earning-note span {
+  background: var(--nx-accent-grad);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.page-home .earning-chip {
+  background: #fff;
+}
+
+.page-home .faq-btn {
+  font-size: 1.06rem;
+  font-weight: 700;
+  padding: 18px 20px;
+}
+
+.page-home .faq-btn:not(.collapsed) {
+  background: linear-gradient(135deg, rgba(59, 130, 246, 0.08), rgba(168, 85, 247, 0.1), rgba(236, 72, 153, 0.08));
+}
+
+.page-home .final-cta-section {
+  background: linear-gradient(135deg, #0d2541 0%, #1b3052 52%, #254a73 100%);
+  padding: 88px 0;
+}
+
+.page-home .final-cta-wrap {
+  max-width: 980px;
+}
+
+.page-home .final-contact-chip {
+  background: rgba(255, 255, 255, 0.08);
+  border-color: rgba(255, 255, 255, 0.16);
+}
+
+.page-home .site-footer {
+  background: #10233e;
+}
+
+@media (max-width: 991px) {
+  .page-home .hero-main {
+    padding: 56px 0 64px;
+  }
+
+  .page-home .hero-title,
+  .page-home .income-title,
+  .page-home .client-process-title,
+  .page-home .ideal-title,
+  .page-home .commission-title,
+  .page-home .model-title,
+  .page-home .earning-title,
+  .page-home .faq-title {
+    font-size: 2.1rem;
+  }
+
+  .page-home .income-section,
+  .page-home .client-process-section,
+  .page-home .ideal-section,
+  .page-home .commission-section,
+  .page-home .support-section,
+  .page-home .model-section,
+  .page-home .earning-section,
+  .page-home .faq-section {
+    padding: 64px 0;
+  }
+}
+
+@media (max-width: 575px) {
+  html,
+  body.page-home {
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+
+  .page-home .hero-wrap,
+  .page-home section,
+  .page-home .site-footer {
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+
+  .page-home .container {
+    width: 100%;
+    max-width: 390px;
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .page-home .hero-title,
+  .page-home .income-title,
+  .page-home .client-process-title,
+  .page-home .ideal-title,
+  .page-home .commission-title,
+  .page-home .support-title,
+  .page-home .model-title,
+  .page-home .earning-title,
+  .page-home .faq-title,
+  .page-home .final-cta-title {
+    font-size: 1.64rem;
+    line-height: 1.18 !important;
+    overflow-wrap: break-word;
+  }
+
+  .page-home .hero-title span,
+  .page-home .income-title span,
+  .page-home .client-process-title span,
+  .page-home .ideal-title span,
+  .page-home .commission-title span,
+  .page-home .support-title span,
+  .page-home .model-title span,
+  .page-home .earning-title span,
+  .page-home .faq-title span,
+  .page-home .final-cta-title span {
+    display: inline;
+  }
+
+  .page-home .hero-title br,
+  .page-home .ideal-title br,
+  .page-home .commission-title br,
+  .page-home .support-title br,
+  .page-home .final-cta-title br {
+    display: none;
+  }
+
+  .page-home .hero-btn-primary,
+  .page-home .hero-btn-secondary {
+    width: 100%;
+  }
+
+  .page-home .hero-stats .col-11 {
+    width: 100%;
+  }
+
+  .page-home .hero-stat-card {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .page-home .hero-subtitle,
+  .page-home .income-text,
+  .page-home .support-text,
+  .page-home .ideal-subtitle,
+  .page-home .commission-subtitle,
+  .page-home .client-process-subtitle,
+  .page-home .model-subtitle,
+  .page-home .earning-subtitle,
+  .page-home .faq-subtitle,
+  .page-home .final-cta-text {
+    overflow-wrap: anywhere;
+  }
+
+  .page-home .benefit-row,
+  .page-home .commission-row {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 6px;
+  }
+
+  .page-home .benefit-row strong,
+  .page-home .commission-row strong {
+    text-align: left;
+    white-space: normal;
+  }
+
+  .page-home .earning-row {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .page-home .earning-row .text-end {
+    text-align: left !important;
+  }
+}
+
 .site-footer {
   background: #1b3052;
   color: #d1d5db;
