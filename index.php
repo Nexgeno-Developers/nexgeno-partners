@@ -455,76 +455,92 @@ include 'header.php';
     </div>
   </section>
 
-  <section class="faq-section">
+  <section class="faq-section" aria-labelledby="faq-heading">
     <div class="container">
-      <div class="text-center">
-        <h2 class="faq-title">Frequently Asked <span>Questions</span></h2>
-        <p class="faq-subtitle mt-3">Everything you need to know about partnering with Nexgeno.</p>
-      </div>
+      <div class="faq-layout">
+        <div class="faq-intro">
+          <span class="faq-eyebrow"><i class="bi bi-question-circle" aria-hidden="true"></i> Partner FAQ</span>
+          <h2 id="faq-heading" class="faq-title">Frequently Asked <span>Questions</span></h2>
+          <p class="faq-subtitle mt-3">Everything you need to know about partnering with Nexgeno.</p>
 
-      <div class="faq-wrap mt-4">
-        <div class="accordion" id="partnerFaq">
-          <div class="accordion-item faq-item">
-            <h2 class="accordion-header">
-              <button class="accordion-button faq-btn" type="button" data-bs-toggle="collapse" data-bs-target="#faqOne" aria-expanded="true" aria-controls="faqOne">
-                Do I need to be technical?
-              </button>
-            </h2>
-            <div id="faqOne" class="accordion-collapse collapse show" data-bs-parent="#partnerFaq">
-              <div class="accordion-body faq-body">
-                No. Our team handles execution and delivery. You can focus on client relationships and business growth.
-              </div>
+          <div class="faq-support-card">
+            <span class="faq-support-icon" aria-hidden="true"><i class="bi bi-headset"></i></span>
+            <div>
+              <p class="faq-support-label">Still deciding?</p>
+              <a href="contact.php">Talk to our partner team <i class="bi bi-arrow-right-short" aria-hidden="true"></i></a>
             </div>
           </div>
+        </div>
 
-          <div class="accordion-item faq-item">
-            <h2 class="accordion-header">
-              <button class="accordion-button collapsed faq-btn" type="button" data-bs-toggle="collapse" data-bs-target="#faqTwo" aria-expanded="false" aria-controls="faqTwo">
-                Can I white-label your services?
-              </button>
-            </h2>
-            <div id="faqTwo" class="accordion-collapse collapse" data-bs-parent="#partnerFaq">
-              <div class="accordion-body faq-body">
-                Yes, white-label support is available so you can serve your clients under your brand.
+        <div class="faq-wrap">
+          <div class="accordion" id="partnerFaq">
+            <div class="accordion-item faq-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button faq-btn" type="button" data-bs-toggle="collapse" data-bs-target="#faqOne" aria-expanded="true" aria-controls="faqOne">
+                  <span class="faq-question-icon" aria-hidden="true"><i class="bi bi-tools"></i></span>
+                  <span>Do I need to be technical?</span>
+                </button>
+              </h2>
+              <div id="faqOne" class="accordion-collapse collapse show" data-bs-parent="#partnerFaq">
+                <div class="accordion-body faq-body">
+                  No. Our team handles execution and delivery. You can focus on client relationships and business growth.
+                </div>
               </div>
             </div>
-          </div>
 
-          <div class="accordion-item faq-item">
-            <h2 class="accordion-header">
-              <button class="accordion-button collapsed faq-btn" type="button" data-bs-toggle="collapse" data-bs-target="#faqThree" aria-expanded="false" aria-controls="faqThree">
-                When do I get my commission?
-              </button>
-            </h2>
-            <div id="faqThree" class="accordion-collapse collapse" data-bs-parent="#partnerFaq">
-              <div class="accordion-body faq-body">
-                Commission is released within 7 working days after payment is received from the client.
+            <div class="accordion-item faq-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed faq-btn" type="button" data-bs-toggle="collapse" data-bs-target="#faqTwo" aria-expanded="false" aria-controls="faqTwo">
+                  <span class="faq-question-icon" aria-hidden="true"><i class="bi bi-tag"></i></span>
+                  <span>Can I white-label your services?</span>
+                </button>
+              </h2>
+              <div id="faqTwo" class="accordion-collapse collapse" data-bs-parent="#partnerFaq">
+                <div class="accordion-body faq-body">
+                  Yes, white-label support is available so you can serve your clients under your brand.
+                </div>
               </div>
             </div>
-          </div>
 
-          <div class="accordion-item faq-item">
-            <h2 class="accordion-header">
-              <button class="accordion-button collapsed faq-btn" type="button" data-bs-toggle="collapse" data-bs-target="#faqFour" aria-expanded="false" aria-controls="faqFour">
-                Is there any joining fee?
-              </button>
-            </h2>
-            <div id="faqFour" class="accordion-collapse collapse" data-bs-parent="#partnerFaq">
-              <div class="accordion-body faq-body">
-                No mandatory joining fee for standard partnership. Special terms may apply for premium partner models.
+            <div class="accordion-item faq-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed faq-btn" type="button" data-bs-toggle="collapse" data-bs-target="#faqThree" aria-expanded="false" aria-controls="faqThree">
+                  <span class="faq-question-icon" aria-hidden="true"><i class="bi bi-wallet2"></i></span>
+                  <span>When do I get my commission?</span>
+                </button>
+              </h2>
+              <div id="faqThree" class="accordion-collapse collapse" data-bs-parent="#partnerFaq">
+                <div class="accordion-body faq-body">
+                  Commission is released within 7 working days after payment is received from the client.
+                </div>
               </div>
             </div>
-          </div>
 
-          <div class="accordion-item faq-item">
-            <h2 class="accordion-header">
-              <button class="accordion-button collapsed faq-btn" type="button" data-bs-toggle="collapse" data-bs-target="#faqFive" aria-expanded="false" aria-controls="faqFive">
-                Is this available outside India?
-              </button>
-            </h2>
-            <div id="faqFive" class="accordion-collapse collapse" data-bs-parent="#partnerFaq">
-              <div class="accordion-body faq-body">
-                Yes, partners from outside India can join and collaborate remotely with our team.
+            <div class="accordion-item faq-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed faq-btn" type="button" data-bs-toggle="collapse" data-bs-target="#faqFour" aria-expanded="false" aria-controls="faqFour">
+                  <span class="faq-question-icon" aria-hidden="true"><i class="bi bi-receipt"></i></span>
+                  <span>Is there any joining fee?</span>
+                </button>
+              </h2>
+              <div id="faqFour" class="accordion-collapse collapse" data-bs-parent="#partnerFaq">
+                <div class="accordion-body faq-body">
+                  No mandatory joining fee for standard partnership. Special terms may apply for premium partner models.
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item faq-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed faq-btn" type="button" data-bs-toggle="collapse" data-bs-target="#faqFive" aria-expanded="false" aria-controls="faqFive">
+                  <span class="faq-question-icon" aria-hidden="true"><i class="bi bi-globe2"></i></span>
+                  <span>Is this available outside India?</span>
+                </button>
+              </h2>
+              <div id="faqFive" class="accordion-collapse collapse" data-bs-parent="#partnerFaq">
+                <div class="accordion-body faq-body">
+                  Yes, partners from outside India can join and collaborate remotely with our team.
+                </div>
               </div>
             </div>
           </div>
