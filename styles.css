@@ -1745,21 +1745,55 @@ section.ideal-section {
 }
 
 .page-home .final-cta-section {
-  background: linear-gradient(135deg, #0d2541 0%, #1b3052 52%, #254a73 100%);
+  background: #f5f8fc;
   padding: 88px 0;
 }
 
 .page-home .final-cta-wrap {
   max-width: 980px;
+  color: var(--nx-navy);
+}
+
+.page-home .final-cta-text {
+  color: #5a6b82;
 }
 
 .page-home .final-contact-chip {
-  background: rgba(255, 255, 255, 0.08);
-  border-color: rgba(255, 255, 255, 0.16);
+  background: #fff;
+  border-color: rgba(27, 48, 82, 0.1);
+  color: var(--nx-navy);
+  box-shadow: 0 12px 28px rgba(27, 48, 82, 0.06);
+}
+
+.page-home .final-cta-footnote {
+  color: #6b7a90;
 }
 
 .page-home .site-footer {
-  background: #10233e;
+  background: #fff;
+  border-top: 1px solid rgba(27, 48, 82, 0.08);
+  color: #5a6b82;
+}
+
+.page-home .site-footer .footer-brand,
+.page-home .site-footer .footer-title {
+  color: var(--nx-navy);
+}
+
+.page-home .site-footer .footer-about,
+.page-home .site-footer .footer-links a,
+.page-home .site-footer .footer-contact li,
+.page-home .site-footer .footer-contact i,
+.page-home .site-footer .footer-copy {
+  color: #5a6b82;
+}
+
+.page-home .site-footer .footer-links a:hover {
+  color: var(--nx-coral-dark);
+}
+
+.page-home .site-footer .footer-divider {
+  border-color: rgba(27, 48, 82, 0.1);
 }
 
 @media (max-width: 991px) {
