@@ -7,18 +7,27 @@ $heroWrapExtraClass = 'hero-wrap-commission';
 include 'header.php';
 ?>
 
-  <section class="commission-page-hero">
+  <section class="commission-page-hero" aria-labelledby="commission-hero-heading">
     <div class="container text-center">
-      <h1>Commission<br><span>Structure</span></h1>
+      <span class="commission-eyebrow"><i class="bi bi-graph-up-arrow" aria-hidden="true"></i> Partner earnings</span>
+      <h1 id="commission-hero-heading">Commission <span>Structure</span></h1>
       <p>
         Simple, transparent, and high-margin commission model designed to maximize your earnings.
       </p>
+
+      
     </div>
   </section>
   </div>
 
-  <section class="commission-features-section">
+  <section class="commission-features-section" aria-labelledby="commission-features-heading">
     <div class="container">
+      <div class="commission-section-head text-center">
+        <span class="commission-section-kicker">Why partners like it</span>
+        <h2 id="commission-features-heading" class="commission-section-title">Built for <span>Clear Earnings</span></h2>
+        <p>Every lead has a simple earning path, predictable payout terms, and room to grow into recurring revenue.</p>
+      </div>
+
       <div class="row g-4 justify-content-center">
         <div class="col-sm-6 col-lg-3">
           <article class="commission-feature-card text-center">
@@ -54,21 +63,25 @@ include 'header.php';
 
   <section class="commission-breakdown-section" aria-labelledby="commission-breakdown-heading">
     <div class="container">
-      <h2 id="commission-breakdown-heading" class="commission-breakdown-title">Detailed Commission Breakdown</h2>
+      <div class="commission-section-head text-center">
+        <span class="commission-section-kicker">Commission slabs</span>
+        <h2 id="commission-breakdown-heading" class="commission-breakdown-title">Detailed <span>Commission Breakdown</span></h2>
+        <p>Use these ranges while qualifying leads and planning your monthly earning targets.</p>
+      </div>
       <div class="commission-breakdown-stack">
         <article class="commission-breakdown-card">
           <header class="commission-breakdown-card-head">Website Design &amp; Development</header>
           <div class="commission-breakdown-row">
-            <span>₹10,000 – ₹49,999</span>
-            <strong>10–15%</strong>
+            <span>&#8377;10,000 &ndash; &#8377;49,999</span>
+            <strong>10&ndash;15%</strong>
           </div>
           <div class="commission-breakdown-row">
-            <span>₹50,000 – ₹99,999</span>
-            <strong>15–20%</strong>
+            <span>&#8377;50,000 &ndash; &#8377;99,999</span>
+            <strong>15&ndash;20%</strong>
           </div>
           <div class="commission-breakdown-row">
-            <span>₹1,00,000+</span>
-            <strong>20–25%</strong>
+            <span>&#8377;1,00,000+</span>
+            <strong>20&ndash;25%</strong>
           </div>
         </article>
 
@@ -76,7 +89,7 @@ include 'header.php';
           <header class="commission-breakdown-card-head">Ecommerce &amp; Custom Solutions</header>
           <div class="commission-breakdown-row">
             <span>Ecommerce Websites</span>
-            <strong>15–25%</strong>
+            <strong>15&ndash;25%</strong>
           </div>
           <div class="commission-breakdown-row">
             <span>Custom Software / SaaS</span>
@@ -92,15 +105,15 @@ include 'header.php';
           <header class="commission-breakdown-card-head">Digital Marketing (Recurring)</header>
           <div class="commission-breakdown-row">
             <span>SEO Services</span>
-            <strong>10–20%</strong>
+            <strong>10&ndash;20%</strong>
           </div>
           <div class="commission-breakdown-row">
             <span>Social Media Marketing</span>
-            <strong>10–20%</strong>
+            <strong>10&ndash;20%</strong>
           </div>
           <div class="commission-breakdown-row">
             <span>Google Ads Management</span>
-            <strong>10–20%</strong>
+            <strong>10&ndash;20%</strong>
           </div>
         </article>
 
@@ -108,7 +121,7 @@ include 'header.php';
           <header class="commission-breakdown-card-head">Maintenance &amp; Hosting (Recurring)</header>
           <div class="commission-breakdown-row">
             <span>AMC &amp; Website Maintenance</span>
-            <strong>15–20%</strong>
+            <strong>15&ndash;20%</strong>
           </div>
           <div class="commission-breakdown-row">
             <span>Hosting &amp; Cloud</span>
@@ -125,34 +138,37 @@ include 'header.php';
 
   <section class="commission-earning-examples" aria-labelledby="commission-earning-heading">
     <div class="container">
-      <h2 id="commission-earning-heading" class="commission-earning-title">Real Earning Examples</h2>
-      <p class="commission-earning-sub">See how much you can earn as a Nexgeno Channel Partner</p>
+      <div class="commission-section-head text-center">
+        <span class="commission-section-kicker">Example scenarios</span>
+        <h2 id="commission-earning-heading" class="commission-earning-title">Real <span>Earning Examples</span></h2>
+        <p class="commission-earning-sub">See how much you can earn as a Nexgeno Channel Partner.</p>
+      </div>
       <div class="row g-4 justify-content-center">
         <div class="col-md-6 col-lg-4">
           <article class="commission-earning-card">
             <span class="commission-earning-card-icon" aria-hidden="true"><i class="bi bi-currency-dollar"></i></span>
             <h3>5 Website Projects/Month</h3>
-            <p>Average value ₹30,000 each at 20% commission</p>
+            <p>Average value &#8377;30,000 each at 20% commission</p>
             <hr class="commission-earning-divider">
-            <div class="commission-earning-result">₹30,000/month</div>
+            <div class="commission-earning-result">&#8377;30,000/month</div>
           </article>
         </div>
         <div class="col-md-6 col-lg-4">
           <article class="commission-earning-card">
             <span class="commission-earning-card-icon" aria-hidden="true"><i class="bi bi-currency-dollar"></i></span>
             <h3>10 SEO Clients</h3>
-            <p>₹15,000/month retainer at 15% recurring</p>
+            <p>&#8377;15,000/month retainer at 15% recurring</p>
             <hr class="commission-earning-divider">
-            <div class="commission-earning-result">₹22,500/month</div>
+            <div class="commission-earning-result">&#8377;22,500/month</div>
           </article>
         </div>
         <div class="col-md-6 col-lg-4">
           <article class="commission-earning-card">
             <span class="commission-earning-card-icon" aria-hidden="true"><i class="bi bi-currency-dollar"></i></span>
             <h3>Custom Ecommerce Project</h3>
-            <p>₹2,00,000 project at 25% commission</p>
+            <p>&#8377;2,00,000 project at 25% commission</p>
             <hr class="commission-earning-divider">
-            <div class="commission-earning-result">₹50,000 one-time</div>
+            <div class="commission-earning-result">&#8377;50,000 one-time</div>
           </article>
         </div>
       </div>
@@ -161,7 +177,11 @@ include 'header.php';
 
   <section class="commission-payment-terms" aria-labelledby="commission-payment-heading">
     <div class="container">
-      <h2 id="commission-payment-heading" class="commission-payment-title">Payment Terms</h2>
+      <div class="commission-section-head text-center">
+        <span class="commission-section-kicker">Payout clarity</span>
+        <h2 id="commission-payment-heading" class="commission-payment-title">Payment <span>Terms</span></h2>
+        <p>Simple rules, transparent statements, and multiple payout options for partner earnings.</p>
+      </div>
       <div class="commission-payment-card">
         <ul class="commission-payment-list">
           <li>
@@ -186,7 +206,7 @@ include 'header.php';
           </li>
           <li>
             <span class="commission-payment-check" aria-hidden="true"><i class="bi bi-check-lg"></i></span>
-            <span>No cap on earnings — earn as much as you can!</span>
+            <span>No cap on earnings &mdash; earn as much as you can!</span>
           </li>
         </ul>
       </div>
@@ -199,7 +219,7 @@ include 'header.php';
         <span class="commission-cta-icon" aria-hidden="true"><i class="bi bi-lightning"></i></span>
         <h2 id="commission-cta-heading">Start Earning Today</h2>
         <p>Join thousands of partners already earning with Nexgeno</p>
-        <a href="apply.php" class="btn commission-cta-btn">Apply for Partnership <span class="commission-cta-arrow" aria-hidden="true">→</span></a>
+        <a href="apply.php" class="btn commission-cta-btn">Apply for Partnership <span class="commission-cta-arrow" aria-hidden="true">&rarr;</span></a>
       </div>
     </div>
   </section>
