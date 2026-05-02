@@ -736,10 +736,12 @@ body {
 }
 
 .commission-section {
-  background: #f4f6fa;
+  background: #fff;
   padding: 70px 0 70px;
 }
-
+.page-home .support-section {
+  background: #f4f6fa;
+}
 .commission-title {
   font-size: clamp(2rem, 3.9vw, 3.2rem);
   font-weight: 800;
@@ -1378,10 +1380,6 @@ body {
   background: #f5f8fc;
 }
 
-.page-home .hero-wrap {
-  background:
-    linear-gradient(180deg, #fff 0%, #fff 55%, #f5f8fc 100%);
-}
 
 .page-home .hero-navbar {
   background: rgba(255, 255, 255, 0.96);
@@ -1541,20 +1539,21 @@ body {
 }
 
 .page-home .income-section,
-.page-home .commission-section,
-.page-home .earning-section,
-.page-home .faq-section {
+.page-home .earning-section{
   background: #f5f8fc;
 }
 
-.page-home .client-process-section,
-.page-home .support-section {
+
+.page-home .faq-section {
   background: #fff;
 }
 
-.page-home .ideal-section,
-.page-home .model-section {
-  background: linear-gradient(180deg, #fff 0%, #f8fbff 100%);
+.page-home .client-process-section {
+  background: #fff;
+}
+
+section.ideal-section {
+    background: #f5f8fc;
 }
 
 .page-home .income-title,
@@ -1614,9 +1613,7 @@ body {
   color: var(--nx-coral-dark);
 }
 
-.page-home .client-process-track {
-  max-width: 1130px;
-}
+
 
 .page-home .client-process-step {
   border-top: 3px solid rgba(168, 85, 247, 0.42);
