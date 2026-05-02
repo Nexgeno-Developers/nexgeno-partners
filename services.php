@@ -2,22 +2,37 @@
 $pageTitle = 'Services | Nexgeno Partners';
 $activePage = 'services';
 $compactHeroWrap = true;
+$bodyPageClass = 'page-services';
+$heroWrapExtraClass = 'hero-wrap-services';
 include 'header.php';
 ?>
 
-  <section class="services-hero">
+  <section class="services-hero" aria-labelledby="services-hero-heading">
     <div class="container text-center">
-      <h1>Services You Can <span>Sell &amp; Earn</span></h1>
+      <span class="services-eyebrow"><i class="bi bi-stars" aria-hidden="true"></i> Partner-ready services</span>
+      <h1 id="services-hero-heading">Services You Can <span>Sell &amp; Earn</span></h1>
       <p>
         As a Nexgeno Channel Partner, you can offer a complete range of IT, Web, and Digital Marketing services to
         your clients. We handle the delivery - you earn the commission.
       </p>
+
+     
+
     </div>
   </section>
   </div>
 
-  <section class="services-list-section">
+  <section class="services-list-section" aria-labelledby="services-list-heading">
     <div class="container">
+      <div class="services-section-head text-center">
+        <span class="services-section-kicker">What you can offer</span>
+        <h2 id="services-list-heading" class="services-list-title">One Program, Multiple <span>Revenue Lines</span></h2>
+        <p>
+          Pick the services that fit your clients, share the lead with Nexgeno, and let our delivery team handle the
+          technical work behind the scenes.
+        </p>
+      </div>
+
       <div class="row g-3 g-lg-4 justify-content-center">
         <div class="col-sm-6 col-lg-3">
           <article class="service-card">
@@ -143,12 +158,15 @@ include 'header.php';
   </section>
 
   <section class="services-cta">
-    <div class="container text-center">
-      <h2>Ready to Start Selling These Services?</h2>
-      <p>Join our partner program today and get access to sales materials, training, and dedicated support.</p>
-      <div class="d-flex justify-content-center gap-2 flex-wrap mt-3">
-        <a href="apply.php" class="btn service-apply-btn">Apply Now <i class="bi bi-arrow-right-short"></i></a>
-        <a href="commission.php" class="btn service-outline-btn">View Commission Details</a>
+    <div class="container">
+      <div class="services-cta-inner text-center">
+        <span class="services-cta-icon" aria-hidden="true"><i class="bi bi-rocket-takeoff"></i></span>
+        <h2>Ready to Start Selling These Services?</h2>
+        <p>Join our partner program today and get access to sales materials, training, and dedicated support.</p>
+        <div class="d-flex justify-content-center gap-2 flex-wrap mt-3">
+          <a href="apply.php" class="btn service-apply-btn">Apply Now <i class="bi bi-arrow-right-short"></i></a>
+          <a href="commission.php" class="btn service-outline-btn">View Commission Details</a>
+        </div>
       </div>
     </div>
   </section>
