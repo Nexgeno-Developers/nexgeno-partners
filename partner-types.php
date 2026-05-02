@@ -7,21 +7,45 @@ $heroWrapExtraClass = 'hero-wrap-partner-types';
 include 'header.php';
 ?>
 
-  <section class="partner-types-page-hero">
+  <section class="partner-types-page-hero" aria-labelledby="partner-types-hero-heading">
     <div class="container">
       <div class="partner-types-hero-inner text-center">
+        <span class="partner-types-eyebrow"><i class="bi bi-layers" aria-hidden="true"></i> Partnership models</span>
         <h1 id="partner-types-hero-heading">Choose Your <span>Partnership Level</span></h1>
         <p>
           We offer flexible partnership models to match your goals, experience, and commitment level.
           Find the perfect fit for your business.
         </p>
+
+        <div class="partner-types-hero-actions">
+          <a href="apply.php" class="btn partner-types-primary-btn">Apply as Partner <i class="bi bi-arrow-right-short"></i></a>
+          <a href="commission.php" class="btn partner-types-outline-btn">View Commission Structure</a>
+        </div>
+
+        <div class="row g-3 justify-content-center partner-types-hero-stats">
+          <div class="col-sm-6 col-lg-3">
+            <div class="partner-types-stat"><strong>3</strong><span>Partnership levels</span></div>
+          </div>
+          <div class="col-sm-6 col-lg-3">
+            <div class="partner-types-stat"><strong>25%+</strong><span>Top earning tier</span></div>
+          </div>
+          <div class="col-sm-6 col-lg-3">
+            <div class="partner-types-stat"><strong>Flexible</strong><span>Referral to ACP model</span></div>
+          </div>
+        </div>
       </div>
     </div>
   </section>
   </div>
 
-  <section class="partner-tier-section" aria-label="Partnership tiers">
+  <section class="partner-tier-section" aria-labelledby="partner-tier-heading">
     <div class="container">
+      <div class="partner-types-section-head text-center">
+        <span class="partner-types-section-kicker">Pick your path</span>
+        <h2 id="partner-tier-heading" class="partner-types-section-title">Find the Model That <span>Fits You</span></h2>
+        <p>Start simple with referrals, build an active sales motion, or create a premium channel partnership with deeper support.</p>
+      </div>
+
       <div class="row g-4 justify-content-center align-items-stretch">
         <div class="col-md-6 col-xl-4">
           <article class="partner-tier-card">
@@ -29,7 +53,7 @@ include 'header.php';
             <h2 class="partner-tier-title">Affiliate Partner</h2>
             <p class="partner-tier-subtitle">Perfect for beginners</p>
             <p class="partner-tier-desc">
-              Refer leads and earn commission while Nexgeno handles sales calls, proposals, delivery, and support—ideal when you want passive income with minimal time.
+              Refer leads and earn commission while Nexgeno handles sales calls, proposals, delivery, and support&mdash;ideal when you want passive income with minimal time.
             </p>
 
             <div class="partner-tier-block">
@@ -37,7 +61,7 @@ include 'header.php';
               <ul class="partner-tier-checklist">
                 <li>Simple referral tracking and payouts</li>
                 <li>No monthly sales targets</li>
-                <li>Flexible engagement—refer when it fits</li>
+                <li>Flexible engagement&mdash;refer when it fits</li>
                 <li>Commission on every successful project</li>
                 <li>Portfolio decks and one-pagers to share</li>
                 <li>Partner coordinator on email &amp; WhatsApp</li>
@@ -134,7 +158,11 @@ include 'header.php';
 
   <section class="partner-compare-section" aria-labelledby="partner-compare-heading">
     <div class="container">
-      <h2 id="partner-compare-heading" class="partner-compare-title">Quick Comparison</h2>
+      <div class="partner-types-section-head text-center">
+        <span class="partner-types-section-kicker">At a glance</span>
+        <h2 id="partner-compare-heading" class="partner-compare-title">Quick <span>Comparison</span></h2>
+        <p>Compare support, targets, branding, and commission potential before choosing your level.</p>
+      </div>
       <div class="partner-compare-table-wrap">
         <div class="table-responsive">
           <table class="partner-compare-table">
@@ -149,9 +177,9 @@ include 'header.php';
             <tbody>
               <tr>
                 <th scope="row">Commission Rate</th>
-                <td>10–15%</td>
-                <td class="partner-compare-highlight">15–25%</td>
-                <td>20–25%+</td>
+                <td>10&ndash;15%</td>
+                <td class="partner-compare-highlight">15&ndash;25%</td>
+                <td>20&ndash;25%+</td>
               </tr>
               <tr>
                 <th scope="row">Sales Targets</th>
@@ -199,10 +227,11 @@ include 'header.php';
   <section class="partner-types-bottom-cta" aria-labelledby="partner-types-bottom-cta-heading">
     <div class="container">
       <div class="partner-types-bottom-cta-inner text-center">
+        <span class="partner-types-bottom-cta-icon" aria-hidden="true"><i class="bi bi-chat-dots"></i></span>
         <h2 id="partner-types-bottom-cta-heading">Not Sure Which Level is Right for You?</h2>
         <p>Talk to our partner team and we&apos;ll help you choose the best option for your situation.</p>
         <div class="partner-types-bottom-cta-actions">
-          <a href="apply.php" class="btn partner-types-bottom-cta-primary">Apply Now <span aria-hidden="true">→</span></a>
+          <a href="apply.php" class="btn partner-types-bottom-cta-primary">Apply Now <span aria-hidden="true">&rarr;</span></a>
           <a href="contact.php" class="btn partner-types-bottom-cta-secondary">Talk to Our Team</a>
         </div>
       </div>
